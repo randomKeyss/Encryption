@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Encryption</title>
+	</head>
+<body>
+<header>
+  <em>
+    <div id = "head">
+      <img src="https://i.ibb.co/Gdb8Crs/0.jpg" alt="HTML5 Icon" width="160"   height="110" style="position: absolute; top:1vw; left: 1vw;">
+      <h1 id="headtext">Message Encryptor</h1>
+    </div>
+  </em>
+  <div class="changers">
+    <div class="selectors selected" id="s1">
+      <h2><b>About</b></h2>
+    </div>
+    <div class="selectors nSelected" id="s2">
+      <h2><b>Encryptor</b></h2>
+    </div>
+  </div>
+  <n id="description">
+    <p>Have you ever wanted to send something so confidentially that no one who gets access to your phone can decrypt it?</n>
+  </n>
+  Now you can with Message Encryptor!
+  <p>
+    </div>
+
+</header>
+
+  <div id="body2">
+    <div id="main">
+      </p>
+      <form action="">
+        <select name="services" id="select1">
+    <option value="gPPK">Get Public/Private Key Pair</option>
+    <option value="PKe">Encrypt with Public Key</option>
+    <option value="dwPK">Decrypt with Private Key</option>
+  </select>
+      </form>
+      <button id="generateButton">Generate</button>
+      <button id="encryptButton">Encrypt</button>
+      <button id="decryptButton">Decrypt</button>
+      </n>
+      </n>
+      </n>
+      <div id="desc">
+        <div id="tips1">
+          <ul>
+            <li>Generate a set of keys by pressing the generate button.</li>
+            <li>Send the public key to the message sender.</li>
+            <li>Save the public and private keys to decript the sender's message.</li>
+            <li>Make sure you store the keys in a secure place, or store them temporarily the text boxes below.</li>
+          </ul>
+        </div>
+        <div id="tips2">
+          <ul>
+            <li>The sender uses the recipient's public key to encrypt their message on this page.</li>
+            <li>The sender then sends the encrypted message back to the recipient.</li>
+          </ul>
+        </div>
+        <div id="tips3">
+          <ul>
+            <li>The recipient uses their public and private keys to decode the sender's message.</li>
+            <li>Even if someone obtains a record of every communication between the sender and recipient, it would be impossible to decode the sender's message.</li>
+          </ul>
+        </div>
+
+      </div>
+      <div id="boxes">
+        <textarea rows="3" cols="75" class="textField" id="textField1"></textarea>
+        <textarea rows="6" cols="75" class="textField" id="textField2"></textarea>
+        <textarea rows="6" cols="75" class="textField" id="textField3"></textarea>
+        <textarea rows="6" cols="75" class="textField" id="textField4"></textarea>
+      </div>
+<div id = "storers">
+  <textarea rows="4" cols="75" class="textField" id="textStore1"></textarea>
+  <textarea rows="4" cols="75" class="textField" id="textStore2"></textarea>
+  <textarea rows="4" cols="75" class="textField" id="textStore3"></textarea>
+</div>
+<p3>Store your public key <br /> <br />
+Store your private key <br /> <br />  
+Store your encrypted message </p3>
+</div>
+    <div id="about">
+      <div id="inner">
+        <p>
+          In order to do so, we at the AntiTheft Foundation have applied RSA to help cloak your messages so that those with malicious intent can stay further away, while you and your friends get closer.
+        </p>
+        <div id="padded">
+          <h2>How To Use!</h2>
+          <p>Step 1: Generate a public- private key pair</p>
+          <p>Step 2: Send public key to a friend so they can encrypt their messages to you</p>
+          <p>Step 3: They respond and you decode their message using the private key</p>
+          <p>THERE YOU HAVE IT! </p>
+          <h2>How it works!</h2>
+          <p>Quite simply, the algorithm takes a message, a private key, and a public key.</p>
+          <p>With the private key, you can encrypt the message.</p>
+          <p>Then you'll send the public key and message to your friend.</p>
+          <p>They'll decipher it using the public key and then send a message back to you using their own private key.</p>
+          <h2>ABOUT US: </h2>
+          <p>We are a group of 4 High Schoolers who are putting together a way of making messaging even safer then before!</p>
+          <p>Paul Shin: He was responsible for the RSA Algorithm</p>
+          <p>Jason Leong: In charge of the logo, planning, and debugging.</p>
+          <p>David Wallach: The programmer in charge of the website and debugger.</p>
+          <p>Daniel Trager: Graphic and font designer and secondary debugger to the RSA Algorithm.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<style>
+a{
+  color:#00f;
+  text-decoration:underline;
+}
+  
+#inner
+{
+    margin-left:auto;
+  margin-right:auto;
+  padding: 1vw 1vw 1vw 1vw;
+  border-radius: 12px;
+  width: 90%;
+  background-color: #9fa9a3;
+}
+#body2{
+  width: 80%;
+  background-color:#e3e0cc;
+  color:#f0f0f0;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 40vw;
+  font-family: "Arial", "Helvetica", "sans-serif";
+  
+}
+header{
+  display:inline-block;
+  text-align:center;
+  background-color:#e3e0cc;
+  width:100%;
+  padding: 0px 0px 0px 0px;
+  color:#3d3d3d;
+}
+#head{
+  margin-left: auto;
+  margin-right: auto;
+  width:90%;
+  height:6vw;
+  ;
+}
+#description{
+  font-size:2vw;
+  width:60%;
+  color:#3d3d3d;
+  margin-left:auto;
+  margin-right:auto;  
+}
+#headtext{
+  margin-left:auto;
+  margin-right:auto;
+  width:55%;
+  font-size:5vw;
+  color:#3d3d3d
+}
+.changers
+{
+  font-family: "Arial", "Helvetica", "sans-serif";
+width: 100%;
+height: 4vw;
+font-size: 1vw;
+  color:#3d3d3d;
+  background-color: #e2e2e2;
+}
+
+#s1
+{
+  
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 3.8vw;
+  width: 49.75%;
+  border: solid;
+  border-width: 1px;
+  border-color:a8a8a8;
+  border-radius: 12px;
+  text-allign: center;
+  float:left;
+  
+}
+#s2
+{
+  border: solid;
+  border-color:a8a8a8;
+  border-width: 1px;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 3.8vw;
+  width: 49.75%;
+  border-radius: 12px;
+  text-allign: center;
+  float:right;
+}
+.selected{
+  background-color:#dce8dc;
+}
+.nSelected{
+  background-color:#c5d5c5;
+}
+#padded p
+{
+  padding-left: 4%;
+}
+#about{
+  padding-top: 2vw;
+}
+
+button 
+{
+  float: left;
+border: none;
+      color: black;
+      padding: 16px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+}
+ button:hover {
+      background-color: #9fa9a3;
+      color: white;
+ }
+#select1
+{
+  font-size: 16px;
+  margin: 4px 2px;
+}
+#boxes
+{
+  width:40%;
+  float: right;
+  margin-right: 10%;
+}
+#desc
+{
+  top: 5vw;
+  float: left;
+  width: 25%;
+  color: #3d3d3d;
+  margin-left:5%;
+  height: 4vw;
+}
+#storers textarea{
+  font-size:.75vw;
+}
+#storers{
+  width:40%;
+  margin-right: 10%;
+  margin-top:20%;
+  float: left;
+}
+
+p3
+{
+  color: #3d3d3d;
+  width: 45%;
+  text-align: left;
+  margin-top: 9%;
+  float: right;
+  font-size: 2vw;
+  margin-left: 0%;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+  var pList = [
+    1013,
+    1019,
+    1021,
+    1031,
+    1033,
+    1039,
+    1049,
+    1051,
+    1061,
+    1063,
+    1069,
+    1087,
+    1091,
+    1093,
+    1097,
+    1103,
+    1109,
+    1117,
+    1123,
+    1129,
+    1151,
+    1153,
+    1163,
+    1171,
+    1181,
+    1187,
+    1193,
+    1201,
+    1213,
+    1217,
+    1223,
+    1229,
+    1231,
+    1237,
+    1249,
+    1259,
+    1277,
+    1279,
+    1283,
+    1289,
+    1291,
+    1297,
+    1301,
+    1303,
+    1307,
+    1319,
+    1321,
+    1327,
+    1361,
+    1367,
+    1373,
+    1381,
+    1399,
+    1409,
+    1423,
+    1427,
+    1429,
+    1433,
+    1439,
+    1447,
+    1451,
+    1453,
+    1459,
+    1471,
+    1481,
+    1483,
+    1487,
+    1489,
+    1493,
+    1499,
+    1511,
+    1523,
+    1531,
+    1543,
+    1549,
+    1553,
+    1559,
+    1567,
+    1571,
+    1579,
+    1583,
+    1597,
+    1601,
+    1607,
+    1609,
+    1613,
+    1619,
+    1621,
+    1627,
+    1637,
+    1657,
+    1663,
+    1667,
+    1669,
+    1693,
+    1697,
+    1699,
+    1709,
+    1721,
+    1723,
+    1733,
+    1741,
+    1747,
+    1753,
+    1759,
+    1777,
+    1783,
+    1787,
+    1789,
+    1801,
+    1811,
+    1823,
+    1831,
+    1847,
+    1861,
+    1867,
+    1871,
+    1873,
+    1877,
+    1879,
+    1889,
+    1901,
+    1907,
+    1913,
+    1931,
+    1933,
+    1949,
+    1951,
+    1973,
+    1979,
+    1987,
+    1993,
+    1997,
+    1999,
+    2003
+  ];
+  var letters = {
+    'b': 1,
+    'c': 2,
+    'd': 3,
+    'e': 4,
+    'f': 5,
+    'g': 6,
+    'h': 7,
+    'i': 8,
+    'j': 9,
+    'k': 10,
+    'l': 11,
+    'm': 12,
+    'n': 13,
+    'o': 14,
+    'p': 15,
+    'q': 16,
+    'r': 17,
+    's': 18,
+    't': 19,
+    'u': 20,
+    'v': 21,
+    'w': 22,
+    'x': 23,
+    'y': 24,
+    'z': 25,
+    'A': 26,
+    'B': 27,
+    'C': 28,
+    'D': 29,
+    'E': 30,
+    'F': 31,
+    'G': 32,
+    'H': 33,
+    'I': 34,
+    'J': 35,
+    'K': 36,
+    'L': 37,
+    'M': 38,
+    'N': 39,
+    'O': 40,
+    'P': 41,
+    'Q': 42,
+    'R': 43,
+    'S': 44,
+    'T': 45,
+    'U': 46,
+    'V': 47,
+    'W': 48,
+    'X': 49,
+    'Y': 50,
+    'Z': 51,
+    '0': 52,
+    '1': 53,
+    '2': 54,
+    '3': 55,
+    '4': 56,
+    '5': 57,
+    '6': 58,
+    '7': 59,
+    '8': 60,
+    '9': 61,
+    '!': 62,
+    '?': 63,
+    ':': 64,
+    ';': 65,
+    '.': 66,
+    ',': 67,
+    ' ': 68,
+    'a': 69,
+    '-': 70
+  };
+  var numbers = {};
+  var num_chars = Object.keys(letters).length;
+  for (var key in letters) {
+    var value = letters[key];
+    numbers[value] = key;
+  }
+  function gcd(a, b) {
+    if (b===0) {
+      return a;
+    }
+    return gcd(b, a % b);
+  }
+  var fastModularExponentiation = function(a, b, n) {
+  a = a % n;
+  var result = 1;
+  var x = a;
+
+  while(b > 0){
+    var leastSignificantBit = b % 2;
+    b = Math.floor(b / 2);
+
+    if (leastSignificantBit == 1) {
+      result = result * x;
+      result = result % n;
+    }
+
+    x = x * x;
+    x = x % n;
+  }
+  return result;
+};
+  function public_exponent(phi) {
+    for (var i = 3; i < phi; i += 2) {
+      if (gcd(i, phi) === 1) {
+        return i;
+      }
+    }
+    alert(phi + " made it through the for loop");
+  }
+  function d_value(phi, e) {
+    var k = 1;
+    while (true) {
+      if ((k * phi + 1) % e === 0) {
+        return Math.floor((k * phi + 1) / e);
+      }
+      k++;
+    }
+  }
+  function choosePrimes() {
+    var l = pList.length;
+    var p1 = pList[Math.floor(Math.random() * l)];
+    var p2 = pList[Math.floor(Math.random() * l)];
+    while(p1===p2){
+      p1 = pList[Math.floor(Math.random()*l)];
+      p2 = pList[Math.floor(Math.random()*l)];
+    }
+    return [p1,p2];
+  }
+  function create_keys() {
+    var primes = choosePrimes();
+    var p1 = primes[0];
+    var p2 = primes[1];
+    var n = p1 * p2;
+    var phi = (p1 - 1) * (p2 - 1);
+    var e = public_exponent(phi);
+    var d = d_value(phi, e);
+    var public_key = [n, e];
+    var private_key = [p1, p2, phi, d];
+    return [public_key, private_key];
+  }
+  function string_to_number(m) {
+    var new_msg = 0;
+    for (var i = 0; i < m.length; i++) {
+      new_msg += letters[m[i]]*Math.pow(num_chars,i);
+    }
+    return new_msg;
+  }
+  function encrypt_message(message, public_key) {
+    var numerical_msg = string_to_number(message);
+    n = public_key[0];
+    e = public_key[1];
+    var x = e % (n - 1);
+    return fastModularExponentiation(numerical_msg,x,n);
+  }
+  function number_to_string(n) {
+    var text = "";
+    var m = num_chars;
+    var i = 0;
+    while (n >= m) {
+      i++;
+      m *= num_chars;
+    }
+    for (var j = i; j > -1; j--) {
+      var multiplier = Math.pow(num_chars, j);
+      text = numbers[Math.floor(n / multiplier)] + text;
+      n = n % multiplier;
+    }
+    return text;
+  }
+  function decrypt_message(encrypted_message, public_key, private_key) {
+    n = public_key[0];
+    d = private_key[3];
+    var x = d % (n - 1);
+    var num_msg = fastModularExponentiation(encrypted_message,x,n);
+    return number_to_string(num_msg);
+  }
+  
+  
+  
+  
+  
+  
+  dropdown = 1;
+  $("#generateButton").show();
+  $("#encryptButton").hide();
+  $("#decryptButton").hide();
+  $("#textField1").hide();
+  $("#textField2").show();
+  $("#textField2").show();
+  $("#textField4").hide();
+  $("#textField2").attr("readonly", "readonly");
+  $("#textField3").attr("readonly", "readonly");
+  $("#textField4").attr("readonly", "readonly");
+  $("#textField2").attr("placeholder", "Here you will get your public key.");
+  $("#textField3").attr("placeholder", "Here you will get your private key.");
+  $("#tips1").show();
+  $("#tips2").hide();
+  $("#tips3").hide();
+  var toggle = false;
+  $("#main").hide();
+  $("#s1").click(function() {
+    if (toggle) {
+      $("#main").hide();
+      $("#about").show();
+      toggle = false;
+      $("#s1").addClass("selected");
+      $("#s1").removeClass("nSelected");
+      $("#s2").addClass("nSelected");
+      $("#s2").removeClass("Selected");
+    }
+  });
+  $("#s2").click(function() {
+    if (!toggle) {
+      $("#main").show();
+      $("#about").hide();
+      toggle = true;
+      $("#s2").addClass("selected");
+      $("#s2").removeClass("nSelected");
+      $("#s1").addClass("nSelected");
+      $("#s1").removeClass("Selected");
+    }
+  });
+  $("#select1").change(function() {
+    if ($("#select1").val() === "gPPK") {
+      clearTextAreas();
+      dropdown = 1;
+      $("#generateButton").show();
+      $("#encryptButton").hide();
+      $("#decryptButton").hide();
+      $("#textField1").hide();
+      $("#textField2").show();
+      $("#textField3").show();
+      $("#textField4").hide();
+      $("#textField2").attr("readonly", "readonly");
+      $("#textField3").attr("readonly", "readonly");
+      $("#textField2").attr(
+        "placeholder",
+        "Here you will get your public private key."
+      );
+      
+      $("#textField3").attr(
+        "placeholder",
+        "Here you will get your public private key."
+      );
+      $("#storers").css("margin-top","20%");
+      $("p3").css("margin-top","9%");
+      $("#tips1").show();
+      $("#tips2").hide();
+      $("#tips3").hide();
+    } else if ($("#select1").val() === "PKe") {
+      clearTextAreas();
+      dropdown = 2;
+      $("#generateButton").hide();
+      $("#encryptButton").show();
+      $("#decryptButton").hide();
+      $("#textField1").show();
+      $("#textField2").show();
+      $("#textField3").show();
+      $("#textField4").hide();
+      $("#textField1").removeAttr("readonly", "readonly");
+      $("#textField2").removeAttr("readonly", "readonly");
+      $("#textField3").attr("readonly", "readonly");
+      $("#textField1").attr("placeholder", "Enter public key.");
+      $("#textField2").attr("placeholder", "Enter message.");
+      $("#textField3").attr("placeholder", "Encrypted message.");
+      $("#storers").css("margin-top","25%");
+      $("p3").css("margin-top","9%");
+      $("#tips1").hide();
+      $("#tips2").show();
+      $("#tips3").hide();
+    } else if ($("#select1").val() === "dwPK") {
+      clearTextAreas();
+      dropdown = 3;
+      $("#generateButton").hide();
+      $("#encryptButton").hide();
+      $("#decryptButton").show();
+      $("#textField1").show();
+      $("#textField2").show();
+      $("#textField3").show();
+      $("#textField4").show();
+      $("#textField1").removeAttr("readonly", "readonly");
+      $("#textField2").removeAttr("readonly", "readonly");
+      $("#textField3").removeAttr("readonly", "readonly");
+      $("#textField1").attr("placeholder", "Enter public key.");
+      $("#textField2").attr("placeholder", "Enter private key.");
+      $("#textField3").attr("placeholder", "Enter encrypted message.");
+      $("#textField4").attr("placeholder", "Decrypted message will appear.");
+      $("#storers").css("margin-top","27%");
+      $("p3").css("margin-top","3%");
+      $("#tips1").hide();
+      $("#tips2").hide();
+      $("#tips3").show();
+    }
+  });
+  function clearTextAreas() {
+    $("#textField1").val("");
+    $("#textField2").val("");
+    $("#textField3").val("");
+  }
+  $("#generateButton").click(function(){
+    var PPks = create_keys();
+    $("#textField2").val(PPks[0][0]+" " + PPks[0][1]);
+    $("#textField3").val(PPks[1][0]+" "+PPks[1][1]+" "+PPks[1][2]+" "+PPks[1][3]);
+  });
+  $("#encryptButton").click(function(){
+    var PKstr = $("#textField1").val();
+  var PK = PKstr.split(" ");
+    var encrypted_message = [];
+    var ems = $("#textField2").val();
+    var sz = 3;
+    for(var i = 0; i< ems.length; i+=sz){
+      var diff = ems.length-i;
+      if(diff>sz){
+        encrypted_message.push(encrypt_message(ems.substring(i,i+sz),PK));
+      }else{
+        encrypted_message.push(encrypt_message(ems.substring(i,i+diff),PK));
+      }
+    }
+    var out = "";
+    for(var j = 0; j<encrypted_message.length-1;j++){
+      out+=encrypted_message[j] + " ";
+    }
+    out+=encrypted_message[encrypted_message.length-1];
+  $("#textField3").val(out);
+  });
+  $("#decryptButton").click(function(){
+    var PuKstr = $("#textField1").val();
+    var PrKstr = $("#textField2").val();
+    var PuK = PuKstr.split(" ");
+    var PrK = PrKstr.split(" ");
+    var decrypted_message = "";
+    var emsStr = $("#textField3").val();
+    var ems = emsStr.split(" ");
+    for(var i = 0; i<ems.length;i++){
+      decrypted_message+=decrypt_message(ems[i],PuK,PrK);
+    }
+    $("#textField4").val(decrypted_message);
+  });
+  
+});
+</script>
+</body>
+</html>
